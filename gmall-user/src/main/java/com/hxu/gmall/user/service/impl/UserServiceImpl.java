@@ -12,4 +12,10 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     UserMapper userMapper;
+
+    @Override
+    public List<UmaMember> getAllUser() {
+        userMapper.getAllUser;
+        return null;
+    }
 }

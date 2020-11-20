@@ -20,5 +20,13 @@ public class UserController {
         return "index";
     }
 
+    @RequestMapping("getAllUser")
+    public List<UmaMember> getAllUser(){
+
+        List<UmaMember> umsMembers = userService.getAllUser();
+        retrun umsMembers;
+
+    }
+
 
 }
