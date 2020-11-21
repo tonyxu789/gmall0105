@@ -6,6 +6,7 @@
 
     <select id="selectAllUser" resultType="com.hxu.gmall.user.bean.UmaMember">
         select * from
+        ums_member
     </select>
 
 </mapper>
