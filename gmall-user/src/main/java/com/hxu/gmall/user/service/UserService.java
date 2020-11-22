@@ -1,9 +1,9 @@
 package com.hxu.gmall.user.service;
 
-import com.hxu.gmall.user.bean.UmaMember;
+import com.hxu.gmall.user.bean.UmsMember;
 
 import java.util.List;
 
 public interface UserService {
-    List<UmaMember> getAllUser();
+    List<UmsMember> getAllUser();
 }

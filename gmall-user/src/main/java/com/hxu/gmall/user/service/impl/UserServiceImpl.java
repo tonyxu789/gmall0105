@@ -1,6 +1,6 @@
 package com.hxu.gmall.user.service.impl;
 
-import com.hxu.gmall.user.bean.UmaMember;
+import com.hxu.gmall.user.bean.UmsMember;
 import com.hxu.gmall.user.mapper.UserMapper;
 import com.hxu.gmall.user.service.UserService;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
 
     @Override
-    public List<UmaMember> getAllUser() {
-        return userMapper.selectAllUser();
+    public List<UmsMember> getAllUser() {
+        return userMapper.selectAll();
     }
 }

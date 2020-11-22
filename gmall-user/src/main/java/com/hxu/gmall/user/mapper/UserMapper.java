@@ -1,13 +1,12 @@
 package com.hxu.gmall.user.mapper;
 
-import com.hxu.gmall.user.bean.UmaMember;
-import org.apache.ibatis.annotations.Mapper;
+import com.hxu.gmall.user.bean.UmsMember;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
-@Mapper
-public interface UserMapper {
+public interface UserMapper extends Mapper<UmsMember> {
 
-    List<UmaMember> selectAllUser();
+    List<UmsMember> selectAllUser();
 
 }

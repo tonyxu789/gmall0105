@@ -1,6 +1,6 @@
 package com.hxu.gmall.user.controller;
 
-import com.hxu.gmall.user.bean.UmaMember;
+import com.hxu.gmall.user.bean.UmsMember;
 import com.hxu.gmall.user.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +22,15 @@ public class UserController {
     }
 
     @RequestMapping("getAllUser")
-    public List<UmaMember> getAllUser(){
+    @ResponseBody
+    public List<UmsMember> getAllUser(){
+
+        return userService.getAllUser();
+    }
+
+    @RequestMapping("getAllUser")
+    @ResponseBody
+    public List<UmsMember> getReceiveAddressByMemberId(){
 
         return userService.getAllUser();
     }
