@@ -1,6 +1,7 @@
 package com.hxu.gmall.user.controller;
 
 import com.hxu.gmall.user.bean.UmsMember;
+import com.hxu.gmall.user.bean.UmsMemberReceiveAddress;
 import com.hxu.gmall.user.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,11 +29,11 @@ public class UserController {
         return userService.getAllUser();
     }
 
-    @RequestMapping("getAllUser")
+    @RequestMapping("getReceiveAddressByMemberId")
     @ResponseBody
-    public List<UmsMember> getReceiveAddressByMemberId(){
+    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(){
 
-        return userService.getAllUser();
+        return null;
     }
 
 
