@@ -35,14 +35,11 @@ public class UmsMember implements Serializable {
     private String city;
     private String job;
     private String personalizedSignature;
-    private Integer sourceUid;
     private Integer sourceType;
     private Integer integration;
     private Integer growth;
     private Integer luckyCount;
     private Integer historyIntegration;
-    private String accessToken;
-    private String accessCode;
 
 
 }

@@ -4,10 +4,12 @@ import com.hxu.gmall.user.bean.UmsMember;
 import com.hxu.gmall.user.bean.UmsMemberReceiveAddress;
 import com.hxu.gmall.user.service.UserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.io.InputStream;
 import java.util.List;
 
 @Controller
@@ -31,9 +33,9 @@ public class UserController {
 
     @RequestMapping("getReceiveAddressByMemberId")
     @ResponseBody
-    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(){
+    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(Integer memberId){
 
-        return null;
+        return userService.getReceiveAddressByMemberId(memberId);
     }
 
 
