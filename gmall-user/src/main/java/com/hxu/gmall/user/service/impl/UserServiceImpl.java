@@ -1,13 +1,11 @@
 package com.hxu.gmall.user.service.impl;
 
-import com.hxu.gmall.user.bean.UmsMember;
-import com.hxu.gmall.user.bean.UmsMemberReceiveAddress;
+import com.hxu.gmall.api.bean.UmsMember;
+import com.hxu.gmall.api.bean.UmsMemberReceiveAddress;
 import com.hxu.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.hxu.gmall.user.mapper.UserMapper;
-import com.hxu.gmall.user.service.UserService;
+import com.hxu.gmall.api.service.UserService;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
-import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -28,7 +26,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(Integer memberId) {
+    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId) {
 
 //        Example e = new Example(UmsMemberReceiveAddress.class);
 //        e.createCriteria().andEqualTo("memberId", memberId);

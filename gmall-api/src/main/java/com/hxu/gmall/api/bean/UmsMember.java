@@ -1,5 +1,4 @@
-package com.hxu.gmall.user.bean;
-
+package com.hxu.gmall.api.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
+import java.util.Date;
 
 @Builder
 @Data
@@ -17,29 +17,26 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class UmsMember implements Serializable {
 
-    private static final long serialVersionUID = 8660917418870301518L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private Integer memberLevelId;
+    private String id;
+    private String memberLevelId;
     private String username;
     private String password;
     private String nickname;
     private String phone;
-    private Integer status;
-    private Data createTime;
+    private int status;
+    private Date createTime;
     private String icon;
-    private Integer gender;
-    private Data birthday;
+    private int gender;
+    private Date birthday;
     private String city;
     private String job;
     private String personalizedSignature;
-    private Integer sourceType;
-    private Integer integration;
-    private Integer growth;
-    private Integer luckyCount;
-    private Integer historyIntegration;
-
+    private int sourceType;
+    private int integration;
+    private int growth;
+    private int luckyCount;
+    private int historyIntegration;
 
 }

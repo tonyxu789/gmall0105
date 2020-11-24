@@ -1,4 +1,4 @@
-package com.hxu.gmall.user.bean;
+package com.hxu.gmall.api.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,17 +14,16 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class UmsMemberReceiveAddress implements Serializable {
 
-    private static final long serialVersionUID = 292347417663027764L;
-
     @Id
-    private Integer id;
-    private Integer memberId;
-    private String name;
-    private String phoneNumber;
-    private Integer defaultStatus;
+    private String id;
+    private String memberId;
+    private String  name;
+    private String  phoneNumber;
+    private int defaultStatus;
     private String postCode;
     private String province;
     private String city;
     private String region;
     private String detailAddress;
+
 }
